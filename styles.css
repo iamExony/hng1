@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url("/images/bg-pattern-top.svg"), url("/images/bg-pattern-bottom.svg");
+    background-position: top left, bottom right;
+    background-size: 35rem, 25rem;
+    background-repeat: no-repeat;
+    background-color:  hsl(185, 75%, 39%);
+    color: #333;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 20rem;
+    margin: 5% auto;
+    padding: 30px;
+    background: url("./images/bg-pattern-card.svg")  #fff no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+ header {
+    text-align: center;
+    margin: 1rem auto 10px;
+} 
+
+header img {
+    border-radius: 50%;
+    border: solid white 0.3rem;
+}
+
+.current-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 1.5rem;
+}
+.goals {
+    margin-bottom: 20px;
+}
+.goals ul li{
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Desktop screen size */
+@media (min-width: 768px) {
+     .container {
+        max-width: 40rem;
+        background-size: 100% 30%;
+    } 
+    header {
+        margin: 8rem auto 10px;
+    } 
+
+}
